@@ -338,8 +338,8 @@ user_email = st.text_input("📧 Enter Your Email for Alerts")
 overspent_cats = comp_df[comp_df["Status"] == "⚠️ Overspent"]["Category"].tolist()
 
 def send_email_alert(to_email, subject, body):
-    from_email = "navya.pati25@gmail.com" # Replace with your email address
-    app_password = "qtlk zqol uhfj xoch" # Replace with Gmail App Password
+    from_email = "navya.pati75@gmail.com" # Replace with your email address
+    app_password = "qtpp hjjj uofj xomh" # Replace with Gmail App Password
 
     msg = MIMEMultipart()
     msg["From"] = from_email
@@ -613,4 +613,5 @@ if st.checkbox("📊 Show AI Financial Insights Demo"):
 
     ai_budget_adjuster(demo_data)
     tax_deduction_estimator(demo_data)
+
     generate_summary_pdf(demo_data)
